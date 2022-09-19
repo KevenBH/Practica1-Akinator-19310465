@@ -1,3 +1,6 @@
+from tkinter import Y
+import sys
+
 database = [
     {"name":"Nezuko", "human":False, "power":True, "hairlarge":True , "sing":False, "hairblack":True, "hat":False},
 
@@ -37,8 +40,8 @@ def take_chance(answer, property):
     if len(database) == 1:
         print("Tu Mona China es "+database[0]["name"])
         print("Gracias Por Jugar")
-        quit()
-    
+        sys.exit(input())
+
         
     
 ans = input("¿Tu Mona China es humana?(y,n)")
